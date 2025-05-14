@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমের দুনিয়া - বাংলাদেশের সেরা আমের সংগ্রহ</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="download.png" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                  <!----   <img class="logoimg" src="download.png" alt="আমের দুনিয়া লোগো"> -->
+                   <h1 class="logoh1">আমের দুনিয়া</h1>  
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">হোম</a></li>
+                        <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+                        <li><a href="faq.html">এফ এ কিউ</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Digital Clock --> 
+                <div class="digital-clock" id="digitalClock">
+                    <i id="span01" class="fas fa-clock"></i>
+                    <span id="clock-time"></span>
+                    <span class="span02">বাংলাদেশ</span>
+                </div> 
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">হোম</a></li>
+            <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+            <li><a href="faq.html">এফ এ কিউ</a></li>
+            <li><a href="contact.html">যোগাযোগ</a></li>
+        </ul>
+    </div>
+    
+    <!-- Image Preview Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="প্রিভিউ ইমেজ">
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-slide active" style="background-image: url('https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+        <div class="banner-slide" style="background-image: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+        <div class="banner-slide" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+        
+        <div class="banner-content">
+            <h2>বাংলাদেশের সেরা আমের সংগ্রহ</h2>
+            <p>প্রাকৃতিক স্বাদ ও গন্ধে ভরপুর আমাদের আমের সংগ্রহ। সরাসরি বাগান থেকে আপনার দোরগোড়ায় পৌঁছে দিচ্ছি তাজা ও সুস্বাদু আম।</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="আপনার পছন্দের আম খুঁজুন...">
+                <button><i class="fas fa-search"></i> খুঁজুন</button>
+            </div>
+            
+            <div class="banner-buttons">
+                <a href="#" class="btn">আমাদের আম</a>
+                <a href="#" class="btn btn-outline">আরও জানুন</a>
+            </div>
+        </div>
+        
+        <div class="banner-indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </section>
+
+    <!-- Mango Items Section -->
+    <section class="mango-items">
+        <div class="container">
+            <h2 class="section-title">আমের সংগ্রহ</h2>
+            
+            <div class="items-container">
+                <div class="mango-item">
+                    <div class="mango-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="হিমসাগর আম">
+                    </div>
+                    <div class="mango-info">
+                        <h3>হিমসাগর আম</h3>
+                        <p>সুস্বাদু ও মিষ্টি স্বাদের জন্য বিখ্যাত, সরাসরি চাঁপাইনবাবগঞ্জ থেকে সংগ্রহীত</p>
+                        <a href="#" class="btn buy-btn">কিনুন এখন</a>
+                    </div>
+                </div>
+                
+                <div class="mango-item">
+                    <div class="mango-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ল্যাংড়া আম">
+                    </div>
+                    <div class="mango-info">
+                        <h3>ল্যাংড়া আম</h3>
+                        <p>সবচেয়ে জনপ্রিয় আমগুলোর মধ্যে একটি, অনন্য স্বাদ ও সুগন্ধের জন্য বিখ্যাত</p>
+                        <a href="#" class="btn buy-btn">কিনুন এখন</a>
+                    </div>
+                </div>
+                
+                <div class="mango-item">
+                    <div class="mango-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ফজলি আম">
+                    </div>
+                    <div class="mango-info">
+                        <h3>ফজলি আম</h3>
+                        <p>বড় আকার ও মিষ্টি স্বাদের জন্য পরিচিত, রাজশাহী অঞ্চলের বিশেষ আম</p>
+                        <a href="#" class="btn buy-btn">কিনুন এখন</a>
+                    </div>
+                </div>
+                
+                <div class="mango-item">
+                    <div class="mango-img">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="আম্রপালি আম">
+                    </div>
+                    <div class="mango-info">
+                        <h3>আম্রপালি আম</h3>
+                        <p>হাইব্রিড জাতের আম, কমলা রঙের শাঁস ও অনন্য স্বাদের জন্য বিখ্যাত</p>
+                        <a href="#" class="btn buy-btn">কিনুন এখন</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section class="customer-feedback">
+        <div class="container">
+            <h2 class="section-title">গ্রাহকদের মতামত</h2>
+            
+            <div class="feedback-container">
+                <div class="feedback-card">
+                    <div class="customer-info">
+                        <div class="customer-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="গ্রাহক">
+                        </div>
+                        <div class="customer-details">
+                            <h4>রফিকুল ইসলাম</h4>
+                            <p>ঢাকা</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="feedback-text">"আমি গত তিন বছর ধরে আমের দুনিয়া থেকে আম কিনছি। তাদের আমের গুণগত মান এবং সেবা দুটোই অসাধারণ। বিশেষ করে হিমসাগর আমের স্বাদ অতুলনীয়।"</p>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="customer-info">
+                        <div class="customer-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="গ্রাহক">
+                        </div>
+                        <div class="customer-details">
+                            <h4>সুমাইয়া আক্তার</h4>
+                            <p>চট্টগ্রাম</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="feedback-text">"আমার পরিবারের সবাই আমের দুনিয়ার ফজলি আম খুব পছন্দ করে। ডেলিভারি সময়মতো পেয়েছি এবং আমগুলো ছিল ঠিক যেমনটা বলা হয়েছিল।"</p>
+                </div>
+                
+                <div class="feedback-card">
+                    <div class="customer-info">
+                        <div class="customer-img">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="গ্রাহক">
+                        </div>
+                        <div class="customer-details">
+                            <h4>জাহিদ হাসান</h4>
+                            <p>রাজশাহী</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="feedback-text">"আমি একজন আম ব্যবসায়ী হিসেবে বলতে পারি, আমের দুনিয়া বাংলাদেশের সেরা আম সরবরাহকারীদের মধ্যে একটি। তাদের আমের মান এবং প্যাকেজিং দুটোই উন্নত মানের।"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">আমের গ্যালারি</h2>
+            
+            <div class="gallery-container">
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="হিমসাগর আম">
+                    <div class="gallery-overlay">
+                        <h4>হিমসাগর আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ল্যাংড়া আম">
+                    <div class="gallery-overlay">
+                        <h4>ল্যাংড়া আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ফজলি আম">
+                    <div class="gallery-overlay">
+                        <h4>ফজলি আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="আম্রপালি আম">
+                    <div class="gallery-overlay">
+                        <h4>আম্রপালি আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="গোপালভোগ আম">
+                    <div class="gallery-overlay">
+                        <h4>গোপালভোগ আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="খিরসাপাত আম">
+                    <div class="gallery-overlay">
+                        <h4>খিরসাপাত আম</h4>
+                        <div class="gallery-buttons">
+                            <button class="gallery-btn download-btn"><i class="fas fa-download"></i> ডাউনলোড</button>
+                            <button class="gallery-btn preview-btn"><i class="fas fa-eye"></i> প্রিভিউ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>আমের প্রকারভেদ</h3>
+                    <ul>
+                        <li><a href="#">হিমসাগর আম</a></li>
+                        <li><a href="#">ল্যাংড়া আম</a></li>
+                        <li><a href="#">ফজলি আম</a></li>
+                        <li><a href="#">আম্রপালি আম</a></li>
+                        <li><a href="#">গোপালভোগ আম</a></li>
+                        <li><a href="#">খিরসাপাত আম</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>দ্রুত লিংক</h3>
+                    <ul>
+                        <li><a href="#">হোম</a></li>
+                        <li><a href="#">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#">এফ এ কিউ</a></li>
+                        <li><a href="#">যোগাযোগ</a></li>
+                        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                        <li><a href="#">শর্তাবলী</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>যোগাযোগ</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> ১২৩ আম বাগান সড়ক, রাজশাহী</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-envelope"></i> info@amerduniya.com</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>ওয়েবসাইট রিভিউ</h3>
+                    <div class="website-review">
+                        <div class="review-stats">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.7/5 (১২০ রিভিউ)</span>
+                        </div>
+                        <p>আমাদের গ্রাহকদের মতামত আমাদের জন্য খুবই গুরুত্বপূর্ণ। আপনার অভিজ্ঞতা আমাদের সাথে শেয়ার করুন।</p>
+                    </div>
+                    
+                    <div class="live-viewers">
+                        <i class="fas fa-circle"></i>
+                        <span id="viewer-count">২৫০+ মানুষ এখন ওয়েবসাইটে রয়েছে</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; ২০২৩ আমের দুনিয়া - সর্বস্বত্ব সংরক্ষিত</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

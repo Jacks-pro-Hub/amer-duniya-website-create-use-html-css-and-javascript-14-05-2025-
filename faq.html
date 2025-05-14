@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>আমের দুনিয়া - সাধারণ প্রশ্নাবলী</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="download.png" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="src/css/faq.css">
+</head>
+<body>
+
+        <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                  <!----   <img class="logoimg" src="download.png" alt="আমের দুনিয়া লোগো"> -->
+                   <h1 class="logoh1">আমের দুনিয়া</h1>  
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+                        <li><a href="faq.html" class="active">এফ এ কিউ</a></li>
+                        <li><a href="contact.html">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Digital Clock --> 
+                <div class="digital-clock" id="digitalClock">
+                    <i id="span01" class="fas fa-clock"></i>
+                    <span id="clock-time"></span>
+                    <span class="span02">বাংলাদেশ</span>
+                </div> 
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" >হোম</a></li>
+            <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+            <li><a href="faq.html" class="active">এফ এ কিউ</a></li>
+            <li><a href="contact.html">যোগাযোগ</a></li>
+        </ul>
+    </div>
+    
+
+
+
+  
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">প্রায়শই জিজ্ঞাসিত প্রশ্ন</h2>
+            
+            <div class="search-box">
+                <input type="text" placeholder="প্রশ্ন খুঁজুন...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>আমের দুনিয়া থেকে কিভাবে অর্ডার করব? <span class="popular-tag">জনপ্রিয়</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>আমের দুনিয়া থেকে অর্ডার করতে নিচের ধাপগুলো অনুসরণ করুন:</p>
+                        <ol>
+                            <li>আমাদের ওয়েবসাইটে রেজিস্টার/লগইন করুন</li>
+                            <li>পছন্দের আম সিলেক্ট করুন</li>
+                            <li>কার্টে যোগ করুন</li>
+                            <li>চেকআউট পেজে আপনার ঠিকানা ও পেমেন্ট তথ্য দিন</li>
+                            <li>অর্ডার কনফার্ম করুন</li>
+                        </ol>
+                        <p>অর্ডার কনফার্মেশনের পর আমরা আপনার সাথে যোগাযোগ করব ডেলিভারি ডিটেইলস নিয়ে।</p>
+                        
+                        <div class="faq-meta">
+                            <div class="vote-buttons">
+                                <button class="vote-btn" data-vote="up"><i class="fas fa-thumbs-up"></i> <span class="upvote-count">124</span></button>
+                                <button class="vote-btn" data-vote="down"><i class="fas fa-thumbs-down"></i> <span class="downvote-count">5</span></button>
+                            </div>
+                            <button class="comment-btn"><i class="fas fa-comment"></i> মন্তব্য</button>
+                        </div>
+                        
+                        <div class="comment-section">
+                            <div class="comments-list">
+                                <div class="comment">
+                                    <div class="comment-author">রহিমা আক্তার</div>
+                                    <div class="comment-date">১০ জুন, ২০২৪</div>
+                                    <p>ধন্যবাদ, খুব সহজে অর্ডার করতে পারলাম!</p>
+                                </div>
+                                <div class="comment">
+                                    <div class="comment-author">করিম উদ্দিন</div>
+                                    <div class="comment-date">৮ জুন, ২০২৪</div>
+                                    <p>অর্ডার করতে কোনো সমস্যা হয়নি, ভালো লেগেছে।</p>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                                <button type="submit">মন্তব্য পাঠান</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>আমার অর্ডার কতদিনে পৌঁছাবে?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>আপনার অবস্থানের উপর ডেলিভারি সময় নির্ভর করে:</p>
+                        <ul>
+                            <li>ঢাকা শহরে: ১-২ কার্যদিবস</li>
+                            <li>অন্যান্য বিভাগীয় শহর: ২-৩ কার্যদিবস</li>
+                            <li>জেলা ও উপজেলা: ৩-৫ কার্যদিবস</li>
+                        </ul>
+                        <p>বিশেষ উৎসব বা ছুটির দিনে ডেলিভারি সময় কিছুটা বেশি লাগতে পারে।</p>
+                        
+                        <div class="faq-meta">
+                            <div class="vote-buttons">
+                                <button class="vote-btn" data-vote="up"><i class="fas fa-thumbs-up"></i> <span class="upvote-count">89</span></button>
+                                <button class="vote-btn" data-vote="down"><i class="fas fa-thumbs-down"></i> <span class="downvote-count">3</span></button>
+                            </div>
+                            <button class="comment-btn"><i class="fas fa-comment"></i> মন্তব্য</button>
+                        </div>
+                        
+                        <div class="comment-section">
+                            <div class="comments-list">
+                                <div class="comment">
+                                    <div class="comment-author">সুমাইয়া খান</div>
+                                    <div class="comment-date">৫ জুন, ২০২৪</div>
+                                    <p>আমি চট্টগ্রামে থাকি, ২ দিনের মধ্যে পেয়েছি।</p>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                                <button type="submit">মন্তব্য পাঠান</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>পেমেন্টের জন্য কি কি অপশন আছে?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>আমরা নিচের পেমেন্ট মেথডগুলো সাপোর্ট করি:</p>
+                        <ul>
+                            <li>ক্যাশ অন ডেলিভারি (COD)</li>
+                            <li>bKash (পারসোনাল ও মার্চেন্ট)</li>
+                            <li>নগদ</li>
+                            <li>রকেট</li>
+                            <li>ডেবিট/ক্রেডিট কার্ড (Visa, Mastercard)</li>
+                            <li>ইন্টারনেট ব্যাংকিং</li>
+                        </ul>
+                        
+                        <div class="faq-meta">
+                            <div class="vote-buttons">
+                                <button class="vote-btn" data-vote="up"><i class="fas fa-thumbs-up"></i> <span class="upvote-count">76</span></button>
+                                <button class="vote-btn" data-vote="down"><i class="fas fa-thumbs-down"></i> <span class="downvote-count">2</span></button>
+                            </div>
+                            <button class="comment-btn"><i class="fas fa-comment"></i> মন্তব্য</button>
+                        </div>
+                        
+                        <div class="comment-section">
+                            <div class="comment-form">
+                                <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                                <button type="submit">মন্তব্য পাঠান</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>আমার অর্ডার ক্যানসেল বা পরিবর্তন করতে চাইলে কি করব? <span class="popular-tag">জনপ্রিয়</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>অর্ডার ক্যানসেল বা পরিবর্তনের জন্য:</p>
+                        <ol>
+                            <li>আপনার অ্যাকাউন্টে লগইন করুন</li>
+                            <li>"আমার অর্ডার" সেকশনে যান</li>
+                            <li>ক্যানসেল/পরিবর্তন করতে চাইলে অর্ডার সিলেক্ট করুন</li>
+                            <li>যদি অর্ডার প্রসেসিং স্টেজে থাকে, আপনি সরাসরি ক্যানসেল করতে পারবেন</li>
+                            <li>ডেলিভারি শুরু হয়ে গেলে আমাদের হেল্প ডেস্কে কল করুন</li>
+                        </ol>
+                        <p><strong>দ্রষ্টব্য:</strong> COD অর্ডার ক্যানসেলের জন্য ১ ঘন্টার মধ্যে আমাদের জানাতে হবে।</p>
+                        
+                        <div class="faq-meta">
+                            <div class="vote-buttons">
+                                <button class="vote-btn" data-vote="up"><i class="fas fa-thumbs-up"></i> <span class="upvote-count">112</span></button>
+                                <button class="vote-btn" data-vote="down"><i class="fas fa-thumbs-down"></i> <span class="downvote-count">7</span></button>
+                            </div>
+                            <button class="comment-btn"><i class="fas fa-comment"></i> মন্তব্য</button>
+                        </div>
+                        
+                        <div class="comment-section">
+                            <div class="comments-list">
+                                <div class="comment">
+                                    <div class="comment-author">আনিসুর রহমান</div>
+                                    <div class="comment-date">৩ জুন, ২০২৪</div>
+                                    <p>আমি একবার ভুলে অন্য ঠিকানা দিয়েছিলাম, হেল্প ডেস্কে কল করে ঠিক করেছি, ভালো সাপোর্ট পেয়েছি।</p>
+                                </div>
+                            </div>
+                            <div class="comment-form">
+                                <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                                <button type="submit">মন্তব্য পাঠান</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>আমার অর্ডার ফেরত বা রিফান্ড কিভাবে করতে পারি?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>আমাদের রিটার্ন পলিসি:</p>
+                        <ul>
+                            <li>পণ্য ডেলিভারির ৩ দিনের মধ্যে রিটার্ন রিকুয়েস্ট করতে হবে</li>
+                            <li>পণ্য অবশ্যই অপরিবর্তিত ও আসল প্যাকেটে থাকতে হবে</li>
+                            <li>রিটার্নের জন্য হেল্প ডেস্কে কল করুন বা অ্যাকাউন্ট থেকে রিকুয়েস্ট সাবমিট করুন</li>
+                            <li>আমাদের প্রতিনিধি পণ্য সংগ্রহ করে নেবে</li>
+                            <li>রিফান্ড ৭-১০ কার্যদিবসের মধ্যে প্রক্রিয়াকরণ হবে</li>
+                        </ul>
+                        <p><strong>ব্যতিক্রম:</strong> তাজা ফল রিটার্নের ক্ষেত্রে বিশেষ শর্ত প্রযোজ্য।</p>
+                        
+                        <div class="faq-meta">
+                            <div class="vote-buttons">
+                                <button class="vote-btn" data-vote="up"><i class="fas fa-thumbs-up"></i> <span class="upvote-count">64</span></button>
+                                <button class="vote-btn" data-vote="down"><i class="fas fa-thumbs-down"></i> <span class="downvote-count">9</span></button>
+                            </div>
+                            <button class="comment-btn"><i class="fas fa-comment"></i> মন্তব্য</button>
+                        </div>
+                        
+                        <div class="comment-section">
+                            <div class="comment-form">
+                                <textarea placeholder="আপনার মন্তব্য লিখুন..."></textarea>
+                                <button type="submit">মন্তব্য পাঠান</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">বিভিন্ন বিভাগ</h2>
+            <div class="categories-container">
+                <button class="category-btn active">সব প্রশ্ন</button>
+                <button class="category-btn">অর্ডার সম্পর্কিত</button>
+                <button class="category-btn">ডেলিভারি</button>
+                <button class="category-btn">পেমেন্ট</button>
+                <button class="category-btn">রিটার্ন পলিসি</button>
+                <button class="category-btn">অ্যাকাউন্ট</button>
+            </div>
+        </div>
+    </section>
+
+   
+      <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>আমের প্রকারভেদ</h3>
+                    <ul>
+                        <li><a href="#">হিমসাগর আম</a></li>
+                        <li><a href="#">ল্যাংড়া আম</a></li>
+                        <li><a href="#">ফজলি আম</a></li>
+                        <li><a href="#">আম্রপালি আম</a></li>
+                        <li><a href="#">গোপালভোগ আম</a></li>
+                        <li><a href="#">খিরসাপাত আম</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>দ্রুত লিংক</h3>
+                    <ul>
+                        <li><a href="#">হোম</a></li>
+                        <li><a href="#">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#">এফ এ কিউ</a></li>
+                        <li><a href="#">যোগাযোগ</a></li>
+                        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                        <li><a href="#">শর্তাবলী</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>যোগাযোগ</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> ১২৩ আম বাগান সড়ক, রাজশাহী</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-envelope"></i> info@amerduniya.com</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>ওয়েবসাইট রিভিউ</h3>
+                    <div class="website-review">
+                        <div class="review-stats">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.7/5 (১২০ রিভিউ)</span>
+                        </div>
+                        <p>আমাদের গ্রাহকদের মতামত আমাদের জন্য খুবই গুরুত্বপূর্ণ। আপনার অভিজ্ঞতা আমাদের সাথে শেয়ার করুন।</p>
+                    </div>
+                    
+                    <div class="live-viewers">
+                        <i class="fas fa-circle"></i>
+                        <span id="viewer-count">২৫০+ মানুষ এখন ওয়েবসাইটে রয়েছে</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; ২০২৩ আমের দুনিয়া - সর্বস্বত্ব সংরক্ষিত</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
+    <script src="src/js/faq.js"></script>
+</body>
+</html>

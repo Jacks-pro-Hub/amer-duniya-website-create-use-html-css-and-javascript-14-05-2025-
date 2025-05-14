@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমের দুনিয়ায় - যোগাযোগ</title>
+
+<!-- favicon-->
+    <link rel="shortcut icon" href="download.png" type="image/svg+xml">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="src/css/contact.css">
+    
+    
+</head>
+<body>
+
+      <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                  <!----   <img class="logoimg" src="download.png" alt="আমের দুনিয়া লোগো"> -->
+                   <h1 class="logoh1">আমের দুনিয়া</h1>  
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">হোম</a></li>
+                        <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+                        <li><a href="faq.html">এফ এ কিউ</a></li>
+                        <li><a href="contact.html" class="active">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Digital Clock --> 
+                <div class="digital-clock" id="digitalClock">
+                    <i id="span01" class="fas fa-clock"></i>
+                    <span id="clock-time"></span>
+                    <span class="span02">বাংলাদেশ</span>
+                </div> 
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-btn" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">হোম</a></li>
+            <li><a href="about us.html">আমাদের সম্পর্কে</a></li>
+            <li><a href="faq.html">এফ এ কিউ</a></li>
+            <li><a href="contact.html" class="active">যোগাযোগ</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="contact-container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h2>আমাদের সাথে যোগাযোগ করুন</h2>
+        </div>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="input-box">
+                <label for="name">আপনার নাম</label>
+                <input type="text" id="name" placeholder="আপনার পুরো নাম লিখুন" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="email">ইমেইল ঠিকানা</label>
+                <input type="email" id="email" placeholder="আপনার ইমেইল লিখুন" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="phone">ফোন নাম্বার</label>
+                <input type="tel" id="phone" placeholder="আপনার ফোন নাম্বার লিখুন" required>
+            </div>
+            
+            <div class="input-box">
+                <label for="subject">বিষয়</label>
+                <input type="text" id="subject" placeholder="বিষয় লিখুন" required>
+            </div>
+            
+            <div class="input-box full-width">
+                <label for="message">বার্তা</label>
+                <textarea id="message" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+            </div>
+            
+            <div class="image-upload">
+                <label for="image">ছবি আপলোড করুন (ঐচ্ছিক)</label>
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-camera"></i>
+                    <p>ছবি আপলোড করতে ক্লিক করুন বা ছবিটি এখানে ড্রপ করুন</p>
+                    <input type="file" id="image" accept="image/*">
+                    <img id="preview" class="preview-image" alt="Preview">
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">বার্তা পাঠান</button>
+        </form>
+    </div>
+    
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>ধন্যবাদ!</h3>
+            <p>আপনার বার্তা সফলভাবে পাঠানো হয়েছে। আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।</p>
+            <button class="close-btn" id="closeBtn">ঠিক আছে</button>
+        </div>
+    </div>
+    
+    <script src="src/js/contact.js"> </script>
+    
+</body>
+</html>
